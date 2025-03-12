@@ -1,0 +1,28 @@
+body {
+  background-color: lightcoral;
+}
+.div_songs {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #dc143c; /* Crimson */
+  width: 24rem;
+  height: auto;
+  border-radius: 8px;
+  color: white;
+}
+.div_songs h2,
+.div_songs h4,
+.div_songs p {
+  margin: 0;
+  padding: 0;
+}
+.div_songs img {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
