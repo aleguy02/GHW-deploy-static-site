@@ -1,7 +1,6 @@
 name: Deploy to Nginx
 # manually trigger workflow
-on: 
-  workflow_dispatch:
+on: push
 
 jobs:
   deploy:
@@ -16,4 +15,6 @@ jobs:
         key: ${{ secrets.KEY }}
         # TODO: change default port number
         # port: ${{ secrets.PORT }}
-        script: touch helloworld.txt
+        script: |
+          cd /var/www/aleguy02.dev/html/
+          git pull
