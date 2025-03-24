@@ -1,0 +1,19 @@
+name: Deploy to Nginx
+# manually trigger workflow
+on: 
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+    # from https://github.com/appleboy/ssh-action?tab=readme-ov-file#using-private-key
+    - name: Execute remote ssh commands using ssh key
+      uses: appleboy/ssh-action@v1
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        # TODO: change default port number
+        # port: ${{ secrets.PORT }}
+        script: whoami
