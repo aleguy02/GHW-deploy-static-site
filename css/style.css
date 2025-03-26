@@ -1,28 +1,39 @@
 body {
-  background-color: lightcoral;
-}
-.div_songs {
+  background-color: #0d1117;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  background-color: #dc143c; /* Crimson */
-  width: 24rem;
-  height: auto;
-  border-radius: 8px;
-  color: white;
-}
-.div_songs h2,
-.div_songs h4,
-.div_songs p {
-  margin: 0;
-  padding: 0;
-}
-.div_songs img {
-  margin: 5px;
-  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(230, 230, 230);
 }
 
-/* img {
-  width: 100%;
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
   height: auto;
-} */
+}
+
+.responsive-container {
+  width: 20rem;
+}
+
+.text-container {
+  width: 50rem;
+}
+
+.card-container {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card {
+  width: 15rem;
+}
