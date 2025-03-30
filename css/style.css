@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(230, 230, 230);
+  color: #c9d1d9;
 }
 
 h1 {
@@ -36,4 +36,9 @@ img {
 }
 .card {
   width: 15rem;
+}
+
+#animation-container {
+  width: 400px;
+  height: 400px;
 }
